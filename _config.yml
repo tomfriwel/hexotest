@@ -78,4 +78,7 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/tomfriwel/hexotest
+  branch: gh-pages
+  message: {{ now('YYYY-MM-DD HH:mm:ss') }}

@@ -6,7 +6,8 @@
     "version": "3.7.1"
   },
   "scripts": {
-    "s": "hexo s -p 1234"
+    "s": "hexo s -p 1234",
+    "d": "hexo d -g"
   },
   "dependencies": {
     "hexo": "^3.2.0",
