@@ -81,4 +81,3 @@ deploy:
   type: git
   repo: https://github.com/tomfriwel/hexotest
   branch: gh-pages
-  message: {{ now('YYYY-MM-DD HH:mm:ss') }}
