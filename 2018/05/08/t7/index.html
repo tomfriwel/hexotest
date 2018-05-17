@@ -161,7 +161,7 @@
 
 
 
-    <a data-url="https://tomfriwel.github.io/hexotest/2018/05/08/t7/" data-id="cjhamg99f000vymmc4a0f57am" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="https://tomfriwel.github.io/hexotest/2018/05/08/t7/" data-id="cjhanp1yp000xkimco5z12tx0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -224,36 +224,21 @@
         </footer>
     </div>
 </article>
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-<!-- <h2 class="border-top" id="comments">Comments
-    <a style="color:inherit;" href="#comments">#</a>
-</h2> -->
+    <section id="comments">
+    
+        
 <div id="gitalk-container"></div>
+<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script type="text/javascript" src="/hexotest/js/md5.js"></script>
-<script type="text/javascript">
-    window.onload = function () {
-        var language = navigator.language || navigator.userLanguage;
-        var path = location.pathname || 'unknown'
-        var id = md5(path);
-        var title = '[blog]' + (document.title || 'unknown')
 
-        var gitalk = new Gitalk({
-            clientID: 'd1eb7e13bdea94d4be23',
-            clientSecret: '91cb6a1282bfd6e8225ee6d1c4b2743f621063ec',
-            repo: 'blog',
-            owner: 'tomfriwel',
-            admin: ['tomfriwel'],
-            id: id,
-            labels: ['blog-comments'],
-            title: title,
-            distractionFreeMode: false,
-            language: language
-        });
-        gitalk.render('gitalk-container');
-    }
-</script>
+    
+
+    
+    </section>
+
+
                         </div>
                     </section>
                     <aside id="sidebar">
@@ -500,20 +485,34 @@
 </footer>
         
     
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    var disqus_url = 'https://tomfriwel.github.io/hexotest/2018/05/08/t7/';
-    
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript" src="/hexotest/js/md5.js"></script>
+
+
+<script type="text/javascript">
     (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        var language = navigator.language || navigator.userLanguage;
+        var path = location.pathname || 'unknown'
+        var id = md5(path);
+        var title = '[blog]' + (document.title || 'unknown')
+
+        var gitalk = new Gitalk({
+            clientID: 'bf002086ff686a06a966',
+            clientSecret: 'adf9b3fcd30cfceffb856603a43f7f353073063e',
+            repo: 'hexotest',
+            owner: 'tomfriwel',
+            admin: ['tomfriwel'],
+            id: id,
+            labels: ['blog-comments'],
+            title: title,
+            distractionFreeMode: false,
+            language: language
+        });
+        gitalk.render('gitalk-container');
     })();
-    </script>
+</script>
 
 
 

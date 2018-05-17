@@ -153,8 +153,6 @@
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/image-test-1/">0</span>
-    
 </span>
 
 
@@ -201,8 +199,6 @@
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/image-test/">0</span>
     
 </span>
 
@@ -252,8 +248,6 @@
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/t20/">0</span>
     
 </span>
 
@@ -312,8 +306,6 @@ $ carthage version
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/t19/">0</span>
-    
 </span>
 
 
@@ -362,8 +354,6 @@ $ carthage version
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/t18/">0</span>
-    
 </span>
 
 
@@ -407,8 +397,6 @@ $ carthage version
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/t16/">0</span>
     
 </span>
 
@@ -458,8 +446,6 @@ $ carthage version
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/t15/">0</span>
-    
 </span>
 
 
@@ -503,8 +489,6 @@ $ carthage version
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/t14/">0</span>
     
 </span>
 
@@ -554,8 +538,6 @@ $ carthage version
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/t13/">0</span>
-    
 </span>
 
 
@@ -599,8 +581,6 @@ $ carthage version
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://tomfriwel.github.io/hexotest/2018/05/08/t12/">0</span>
     
 </span>
 
@@ -864,18 +844,34 @@ $ carthage version
 </footer>
         
     
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript" src="/hexotest/js/md5.js"></script>
+
+
+<script type="text/javascript">
     (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        var language = navigator.language || navigator.userLanguage;
+        var path = location.pathname || 'unknown'
+        var id = md5(path);
+        var title = '[blog]' + (document.title || 'unknown')
+
+        var gitalk = new Gitalk({
+            clientID: 'bf002086ff686a06a966',
+            clientSecret: 'adf9b3fcd30cfceffb856603a43f7f353073063e',
+            repo: 'hexotest',
+            owner: 'tomfriwel',
+            admin: ['tomfriwel'],
+            id: id,
+            labels: ['blog-comments'],
+            title: title,
+            distractionFreeMode: false,
+            language: language
+        });
+        gitalk.render('gitalk-container');
     })();
-    </script>
+</script>
 
 
 
